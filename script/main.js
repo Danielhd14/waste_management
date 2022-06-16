@@ -34,7 +34,7 @@ if(fname.value == '' || Uregex.test(fname.value) == false){
 if(lname.value == '' || Uregex.test(lname.value) == false){
     lname.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
 }
-if(email.value == ''){
+if(email.value == '' || Eregex.test(email.value) == false){
     email.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
 }
 if(lGA.value == '...'){
