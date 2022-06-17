@@ -54,3 +54,8 @@
     border: 3px solid #fff; 
     border-radius: 50%; 
 }
+.myDiv{
+   background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAACZJREFUGFdjZNjM8J/Bl4ERmUbhwCQJCDJAwWaG/xCVIAAzF8gGAH87GIA19hJqAAAAAElFTkSuQmCC
+   ) repeat;
+}
