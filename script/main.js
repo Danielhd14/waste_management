@@ -80,8 +80,12 @@ if(confirmPassword.value != password.value){
 }
 
 form[0].addEventListener('click',()=>{
+    let cSpan = document.getElementsByClassName('cSpan')
+    for(let i = 0;i < cSpan.length;i++){
+        cSpan[i].remove()
+    }
     fname.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
-    fname.parentElement.pop()
+
     lname.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
     email.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
     lGA.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
