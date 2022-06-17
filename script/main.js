@@ -26,53 +26,110 @@ function fun(e){
 
 //Validation
 function validateForm(){
-    let Uregex = /^[a-z][a-z0-9_]{4,20}$/gi
+    let Uregex = /^[A-Za-z]+$/
     let Eregex = /^([a-z0-9!#$%&'*+\-/=?^_`{|}~]+(?:\.[a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~]+)*)@((?:[a-z0-9]+(?:[a-z-0-9-]*)\.)+[a-z]{2,})$/gi;
-if(fname.value == '' || Uregex.test(fname.value) == false){
+    let Pregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+
+// First name error message
+    if(fname.value == ''){
     fname.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
     let span = document.createElement('span')
     span.classList.add("cSpan")
     span.innerHTML = 'First name field is empty'
     fname.parentElement.append(span)
+}else if(Uregex.test(fname.value) == false){
+    fname.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = '5-15 characters ; no numbers'
+    fname.parentElement.append(span)
 }
 
-if(lname.value == '' || Uregex.test(lname.value) == false){
+// Last name error message
+if(lname.value == ''){
     lname.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = 'Last name field is empty'
+    lname.parentElement.append(span)
+}else if(Uregex.test(lname.value) == false){
+    lname.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = '5-15 characters no numbers'
+    lname.parentElement.append(span)
 }
-if(email.value == '' || Eregex.test(email.value) == false){
+
+// Email error message
+if(email.value == ''){
     email.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = 'Email field is empty'
+    email.parentElement.append(span)
+}else if(Eregex.test(email.value) == false){
+    email.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = 'Make sure you have the following characters "@"'
+    email.parentElement.append(span)
 }
+
+// LGA error message
 if(lGA.value == '...'){
     lGA.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = 'Please selct your LGA in rivers state'
+    lGA.parentElement.append(span)
 }
+// Password error message
 if(password.value == ''){
     password.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = 'Password field is empty'
+    password.parentElement.append(span)
+}else if(Pregex.test(password.value) == false){
+    password.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = "Password must have at least one Uppercase, lowercase, digit, special characters & 8 characters"
+    password.parentElement.append(span)
 }
-if(confirmPassword.value != password.value || confirmPassword.value == ''){
-    confirmPassword.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
-}
-if(fname.value == '' || Uregex.test(fname.value) == false){
 
-    fname.focus()
-  return false
+// Confirm Password error message
+if(confirmPassword.value == ''){
+    confirmPassword.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = 'Confirm Password field is empty'
+    confirmPassword.parentElement.append(span)
+}else if(confirmPassword.value != password.value){
+    confirmPassword.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = "Confirm password must be the same as password"
+    confirmPassword.parentElement.append(span)
+}
+
+// Return false
+if(fname.value == '' || Uregex.test(fname.value) == false){
+    return false
 }
 if(lname.value == '' || Uregex.test(lname.value) == false){
-    lname.focus()
     return false
 }
 if(email.value == '' || Eregex.test(email.value) == false){
-    email.focus()
     return false
 }
 if(lGA.value == '...'){
-    lGA.focus()
     return false
 }
-if(password.value == ''){
-    password.focus()
+if(password.value == '' || Pregex.test(password.value) == false){
     return false
 }
-if(confirmPassword.value != password.value){
+if(confirmPassword.value != password.value || confirmPassword.value != password.value){
     return false
 }
 
@@ -81,11 +138,10 @@ if(confirmPassword.value != password.value){
 
 form[0].addEventListener('click',()=>{
     let cSpan = document.getElementsByClassName('cSpan')
-    for(let i = 0;i < cSpan.length;i++){
+    for(let i = cSpan.length - 1;i >= 0;i--){
         cSpan[i].remove()
     }
     fname.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
-
     lname.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
     email.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
     lGA.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
