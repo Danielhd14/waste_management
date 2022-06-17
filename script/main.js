@@ -30,7 +30,12 @@ function validateForm(){
     let Eregex = /^([a-z0-9!#$%&'*+\-/=?^_`{|}~]+(?:\.[a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~]+)*)@((?:[a-z0-9]+(?:[a-z-0-9-]*)\.)+[a-z]{2,})$/gi;
 if(fname.value == '' || Uregex.test(fname.value) == false){
     fname.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
+    let span = document.createElement('span')
+    span.classList.add("cSpan")
+    span.innerHTML = 'First name field is empty'
+    fname.parentElement.append(span)
 }
+
 if(lname.value == '' || Uregex.test(lname.value) == false){
     lname.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
 }
@@ -75,7 +80,12 @@ if(confirmPassword.value != password.value){
 }
 
 form[0].addEventListener('click',()=>{
+    let cSpan = document.getElementsByClassName('cSpan')
+    for(let i = 0;i < cSpan.length;i++){
+        cSpan[i].remove()
+    }
     fname.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
+
     lname.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
     email.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
     lGA.style.border = '#ced4da' + ' ' + '1px' + ' ' + 'solid'
