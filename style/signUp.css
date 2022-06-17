@@ -1,0 +1,19 @@
+body{
+    background-image: url(../assets/images/li-hao-b25tsR8dBh0-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(0.1);
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.bg-feint{
+    background: rgba(255, 255, 255, 0.918);
+    /* box-shadow: 0 8px 32px 0 rgba(255, 255, 255, 0.37); */
+    backdrop-filter: blur( 9px );
+    -webkit-backdrop-filter: blur( 9px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
