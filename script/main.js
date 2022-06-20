@@ -132,7 +132,7 @@ if(password.value == '' || Pregex.test(password.value) == false){
 if(confirmPassword.value != password.value || confirmPassword.value != password.value){
     return false
 }
-
+// return true
     return true
 }
 
