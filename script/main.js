@@ -80,7 +80,7 @@ if(lGA.value == '...'){
     lGA.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
     let span = document.createElement('span')
     span.classList.add("cSpan")
-    span.innerHTML = 'Please selct your LGA in rivers state'
+    span.innerHTML = 'Please select your LGA in rivers state'
     lGA.parentElement.append(span)
 }
 // Password error message
