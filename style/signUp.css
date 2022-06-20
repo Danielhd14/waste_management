@@ -3,7 +3,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    backdrop-filter: brightness(0.1);
+    backdrop-filter: brightness(0.2);
     background-attachment: fixed;
     height: 100vh;
     margin: 0;
