@@ -6,11 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <!-- FavIcon -->
     <link rel="shortcut icon" href="../../assets/images/recycle-bin.png" type="image/x-icon">
+
+    <!-- StyleSheet -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="../../style/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../style/customerDash.css">
+    <link href="../../style/customerDash.css" rel="stylesheet">
 
     <!-- Icons -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
@@ -19,8 +22,8 @@
 <div class="row w-100">
 
     <!-- Side Nav Bar -->
-    <div class="d-flex col-2 flex-column flex-shrink-0 p-3 bg-light position-sticky sidebar collapse" style="height: 100vh;">
-        <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+    <div class="d-flex col-2 flex-column flex-shrink-0 p-3 bg-light position-sticky sidebar collapse fixed-top" style="height: 100vh;">
+        <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
           <span class="text-green ms-5 fs-4 fw-bold">nameless</span>
         </a>
         <hr>
@@ -73,15 +76,15 @@
       <!-- End of Side Nav Bar -->
 
     <!-- Main Content -->
-      <div class="col-10 d-flex flex-column pt-4">
+      <div class="col-10 ps-4 d-flex bg-white flex-column pt-4">
+        <h5 class="fs-3 ms-5">Welcome, Michael!</h5>
         <!-- Banner -->
-        <div class="d-flex align-items-center justify-content-between row-cols-2 bg-green edge text-light my-5 mx-2">
+        <div class="d-flex align-items-center shadow-lg justify-content-between row-cols-2 bg-green edge text-light mb-5 mx-2">
             <div class="col ps-5">
-                <h5 class="fs-5">Welcome, Michael!</h5>
                 <p class="lh-3 fs-3">
-                    I have no idea what to write here but idea go come
+                    Waste management made easy with the click of a button
                 </p>
-                <button class="btn btn-light">Learn More</button>
+                <button class="btn btn-light">Scheduele Pick up</button>
             </div>
             <div class="col">
                 <img src="../../assets/images/Recycling-bro.svg" class="d-block float-end me-5 img-fluid" height="70" width="250" alt="">
@@ -91,19 +94,19 @@
 
           <!-- Secondary content -->
           <div class="container my- edge py-2">
-            <h4 class="text-center fs-3 mb-4">Done in 3 easy steps</h4>
+            <h4 class="text-center fs-3 mb-4">How it works</h4>
             <div class="row d-flex align-items-center justify-content-between px-5 text-center">
-              <div class="col-3 d-flex flex-column">
+              <div class="col-3 p-3 shadow d-flex flex-column">
                     <i class='bx bx-trash fs-1 mb-2' style='color:#ffdc03'></i>
                     <span class="text-warning fs-1 fw-bold">01</span>
                     <p class="fs-5">Segregate Trash</p>
               </div>
-                <div class="col-3 d-flex flex-column">
+                <div class="col-3 p-3 shadow d-flex flex-column">
                     <i class='bx bx-calendar fs-1 mb-2' style='color:#ffdb00'  ></i>
                     <span class="text-warning fs-1 fw-bold">02</span>
                     <p class="fs-5">Scheduele Pick up</p>
                 </div>
-                <div class="col-3 d-flex flex-column">
+                <div class="col-3 p-3 shadow d-flex flex-column">
                     <i class='bx bxs-truck fs-1 mb-2' style='color:#ffdb00' ></i>
                     <span class="text-warning fs-1 fw-bold">03</span>
                     <p class="fs-5">Trash Pick up</p>
@@ -112,21 +115,31 @@
           </div>
           <!-- End of Secondary Section -->
 
-          <!-- Donation Banner -->
-          <div class="d-flex align-items-center justify-content-between text-black row-cols-2 bg-orange edge text-light my-5 mx-2">
+          <!-- Recycle Banner -->
+          <div class="d-flex shadow-lg align-items-center justify-content-between text-black row-cols-2 bg-lightGreen edge text-light my-5 mx-2">
             <div class="col ps-5">
-                <h2 class="display-4 fw-bold">Make a Donation</h2>
-                <h3 class="lh-3">
-                    rather than just throwing it away.
-                </h3>
-                <!-- <button class="btn btn-light">Learn More</button> -->
+              <p class="lh-3 fs-1 text-white">Recycle your waste and earn rewards.</p>
+                <button class="btn btn-light">let's Recycle</button>
             </div>
             <div class="col">
-                <img src="" class="d-block float-end me-5 img-fluid" height="70" width="250" alt="">
+                <img src="../../assets/images/Recycling-amico.svg" class="d-block float-end me-5 img-fluid" height="70" width="250" alt="">
+            </div>
+          </div>
+
+          <!-- Donations Banner -->
+          <div class="d-flex shadow-lg align-items-center justify-content-between text-black row-cols-2 bg-pink edge text-light my-5 mx-2">
+            <div class="col ps-5">
+              <p class="lh-3 fs-1 text-white">Make a Donation rather than just throwing it away.</p>
+                <button class="btn btn-light">Donate now</button>
+            </div>
+            <div class="col">
+                <img src="../../assets/images/Tiny People Filling Cardboard Donation Box With Different Food And Products For Help To Poor People In Shelter Stock Vector - Illustration of poor, cartoon_ 162347419.jfif" class="d-block float-end me-5 img-fluid" height="70" width="250" alt="">
             </div>
           </div>
       </div>
 </div>
+
+      <!-- Script -->
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
