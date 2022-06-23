@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="../../assets/images/recycle-bin.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../../style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../style/scheduelePickup.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="row w-100">
+
+        <!-- Side Nav Bar -->
+        <div class="d-flex col-3 flex-column flex-shrink-0 p-3 bg-light position-sticky sidebar collapse fixed-top" style="height: 100vh;">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <span class="text-green ms-5 fs-4 fw-bold">nameless</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="./customerDash.html" class="nav-link link-dark" aria-current="page">
+                    <i class='bx bx-home mx-3'></i>
+                    Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link active-page">
+                    <i class='bx bxs-truck mx-3'></i>
+                    Pick up
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                    <i class='bx bxs-book mx-3'></i>
+                    Learn
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                    <i class='bx bxs-heart mx-3'></i>
+                    Donation
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                    <i class='bx bx-wallet mx-3'></i>
+                    My Wallet
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+              <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
+                <strong>Profile</strong>
+              </a>
+              <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End of Side Nav Bar -->
+
+          <!-- Main content -->
+        <div class="col-9 ps-4 d-flex bg-white flex-column pt-3">
+            <div>
+                <h2 class="text-black text-center">Select Waste type</h2>
+                <hr>
+            </div>
+        <div id="progress">
+                <div id="progress-bar"></div>
+                    <ul id="progress-num">
+                        <li class="step active">1</li>
+                        <li class="step">2</li>
+                        <li class="step">3</li>
+                        <li class="step">4</li>
+                    </ul>
+                    <!-- <button id="progress-prev" class="btn" disabled>Prev</button>
+                    <button id="progress-next" class="btn">Next</button>  -->
+              </div>
+
+            <div class="d-flex row-cols-2 gap-2 align-items-center justify-content-center">
+                <div class="card text-center shadow-lg">
+                    <div class="card-header bg-green text-white fs-3">
+                        Recyclable
+                    </div>
+                    <div class="card-body align-items-center justify-content-center d-flex flex-column">
+                        <img src="../../assets/images/people-recycling-together_23-2148516541.jpg" class="d-block img-fluid" width="450" alt="">
+                        <a href="#" class="btn btn-success text-white">Proceed to Pick up</a>
+                    </div>
+                    <div class="card-footer bg-green text-white fs-3">
+                        Make the world Green.
+                    </div>
+                  </div>
+
+                  <div class="card text-center shadow-lg">
+                    <div class="card-header bg-warning text-white fs-3">
+                        Garbage 
+                    </div>
+                    <div class="card-body align-items-center justify-content-center d-flex flex-column">
+                        <img src="../../assets/images/10181.jpg" class="d-block img-fluid" width="450" alt="">
+                        <a href="#" class="btn btn-warning text-white">Proceed to Pick up</a>
+                    </div>
+                    <div class="card-footer bg-warning text-white fs-3">
+                        Proper disposal of waste.
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+            <!-- <div class="col-9 ps-4 d-flex bg-white flex-column pt-3">
+                <div>
+                    <h2 class="text-black text-center">Waste type</h2>
+                    <hr>
+                </div>
+            <div id="progress">
+                <div id="progress-bar"></div>
+                <ul id="progress-num">
+                    <li class="step active">1</li>
+                    <li class="step">2</li>
+                    <li class="step">3</li>
+                    <li class="step">4</li>
+                </ul>
+                <button id="progress-prev" class="btn" disabled>Prev</button>
+                <button id="progress-next" class="btn">Next</button> 
+            </div>
+            </div> -->
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../../script/scheduelePickup.js"></script>
+</body>
+</html>
