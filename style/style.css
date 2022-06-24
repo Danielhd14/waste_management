@@ -1,18 +1,44 @@
 @import url('http://fonts.cdnfonts.com/css/recoleta');
+/* @import url('https://fonts.googleapis.com/css2?family=Joan&family=Lato&family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
 :root{
     --color-green: #00b300;
+    --color-darkGreen : #028f02;
+    --color-lightGreen: #1bfc1b;
+    --color-pink: #FF8A86;
+    --color-red: #f04e3c;
 }
 *{
-    font-family: 'Recoleta', sans-serif;
+    /* font-family: 'Recoleta', sans-serif; */
+    font-family: 'Poppins', serif;
 }
 .bg-green{
     background-color: var(--color-green);
+}
+.bg-pink{
+    background-color: var(--color-pink);
+}
+.bg-lightGreen{
+    background-color: var(--color-lightGreen);
+}
+.border-green{
+    border: 2px solid var(--color-green);
+    border-radius: 20px;
 }
 .text-green{
     color: var(--color-green);
 }
 .edge{
     border-radius: 20px;
+}
+.btn-red{
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 .btn-green{
     background-color: var(--color-green);
@@ -24,7 +50,40 @@
     cursor: pointer;
 }
 .btn-green:hover{
-    background-color: white;
+    background-color: var(--color-darkGreen);
     border: 1px solid var(--color-green);
-    color: var(--color-green);
+    color: #fff;
+}
+.earth{
+    position: absolute;
+    top: 40px;
+    left: 110px;
+    z-index: 20;
+}
+.earth-2{
+    position: absolute;
+    right: -650px;
+    bottom: 35px;
+    z-index: 20;
+}
+.testimonial-card .card-up { 
+    height: 120px; 
+    overflow: hidden; 
+    border-top-left-radius: 0.25rem; 
+    border-top-right-radius: 0.25rem; 
+} 
+.testimonial-card .avatar { 
+    width: 110px;
+    margin-top: -60px; 
+    overflow: hidden; 
+    border: 3px solid #fff; 
+    border-radius: 50%; 
+}
+.myDiv{
+   background:url(
+data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAFCAYAAACNbyblAAAAAXNSR0IArs4c6QAAACZJREFUGFdjZNjM8J/Bl4ERmUbhwCQJCDJAwWaG/xCVIAAzF8gGAH87GIA19hJqAAAAAElFTkSuQmCC
+   ) repeat;
+}
+.cSpan{
+    color: red
 }
