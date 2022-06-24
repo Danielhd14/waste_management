@@ -1,6 +1,6 @@
 // LGA select tag start
 let lGA = document.getElementById('LGA')
-let url = "../script/api.json"
+let url = "../../script/api.json"
 let form = document.getElementsByTagName('form')
 let fname = document.getElementById("fname")
 let lname = document.getElementById("lname")
