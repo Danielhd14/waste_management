@@ -42,3 +42,14 @@ progressNext.addEventListener("click", () => {
       progressNext.disabled = false;
     }
   };
+
+  //////
+
+  const recycleSection = document.getElementById('recycle-section')
+  const mainContent = document.getElementById('main-content')
+
+  recycleSection.addEventListener('click', removeSection)
+
+  function removeSection() {
+    mainContent.classList.add('d-none')
+  }

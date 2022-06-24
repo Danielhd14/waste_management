@@ -1,14 +1,16 @@
 @import url('http://fonts.cdnfonts.com/css/recoleta');
-@import url('https://fonts.googleapis.com/css2?family=Joan&family=Lato&family=Poppins&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Joan&family=Lato&family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
 :root{
     --color-green: #00b300;
     --color-darkGreen : #028f02;
     --color-lightGreen: #1bfc1b;
     --color-pink: #FF8A86;
+    --color-red: #f04e3c;
 }
 *{
     /* font-family: 'Recoleta', sans-serif; */
-    font-family: 'Joan', serif;
+    font-family: 'Poppins', serif;
 }
 .bg-green{
     background-color: var(--color-green);
@@ -19,11 +21,24 @@
 .bg-lightGreen{
     background-color: var(--color-lightGreen);
 }
+.border-green{
+    border: 2px solid var(--color-green);
+    border-radius: 20px;
+}
 .text-green{
     color: var(--color-green);
 }
 .edge{
     border-radius: 20px;
+}
+.btn-red{
+    background-color: var(--color-red);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 8px;
+    font-size: 1.2em;
+    cursor: pointer;
 }
 .btn-green{
     background-color: var(--color-green);

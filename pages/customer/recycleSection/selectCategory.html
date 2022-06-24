@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="shortcut icon" href="../../assets/images/recycle-bin.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../../assets/images/recycle-bin.png" type="image/x-icon">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link href="../../style/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../style/scheduelePickup.css">
+    <link href="../../../style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../style/scheduelePickup.css">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -27,7 +27,7 @@
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
               <li class="nav-item">
-                <a href="../../pages/customer/customerDash.html" class="nav-link link-dark" aria-current="page">
+                <a href="../customerDash.html" class="nav-link link-dark" aria-current="page">
                     <i class='bx bx-home mx-3'></i>
                     Home
                 </a>
@@ -79,84 +79,55 @@
                 <h2 class="text-black text-center">Scheduele Pick up</h2>
                 <hr>
             </div>
-            <!-- <div id="progress">
+            <div id="progress">
                 <div id="progress-bar">     
                 </div>
-                    <ul id="progress-num">
+                    <!-- <ul id="progress-num">
                         <li class="step active">1</li>
                         <li class="step">2</li>
                         <li class="step">3</li>
                         <li class="step">4</li>
-                    </ul>
-                    <button id="progress-prev" class="btn" disabled>Prev</button>
-                    <button id="progress-next" class="btn">Next</button> 
-            </div> -->
-
-            <!-- select waste type section -->
-            <div class="d-flex row-cols-2 gap-2 align-items-center justify-content-center" id="selectWaste">
-                <div class="card text-center shadow">
-                    <div class="card-header bg-green text-white fs-3">
-                        Recyclable
-                    </div>
-                    <div class="card-body align-items-center justify-content-center d-flex flex-column">
-                        <img src="../../assets/images/people-recycling-together_23-2148516541.jpg" class="d-block img-fluid" width="450" alt="">
-                        <a href="./recycleSection/selectCategory.html"><button id="recycle-section" class="btn btn-success text-white shadow-none">Proceed</button></a>
-                    </div>
-                    <div class="card-footer bg-green text-white fs-5">
-                        Make the world Green.
-                    </div>
-                  </div>
-
-                  <div class="card text-center shadow">
-                    <div class="card-header bg-warning text-white fs-3">
-                        Garbage 
-                    </div>
-                    <div class="card-body align-items-center justify-content-center d-flex flex-column">
-                        <img src="../../assets/images/10181.jpg" class="d-block img-fluid" width="450" alt="">
-                        <a href="#" class="btn btn-warning text-white">Proceed</a>
-                    </div>
-                    <div class="card-footer bg-warning text-white fs-5">
-                        Proper disposal of waste.
-                    </div>
-                  </div>
+                    </ul> -->
+                    <!-- <button id="progress-prev" class="btn" disabled>Prev</button>
+                    <button id="progress-next" class="btn">Next</button>  -->
             </div>
 
 
             <!-- select recyclable category -->
-            <!-- <div class="row pb-4 g-3 pt-1">
+            <div class="row pb-4 g-3 pt-1">
                 <h2 class="ps-5">Select category: </h2>
                 <div class="d-flex flex-column gap-5">    
 
                     <div class="d-flex align-items-center justify-content-center">
                         <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../assets/images/recycle/organic-waste.png" class="d-block img-fluid" width="70" alt="">
+                            <img src="../../../assets/images/recycle/organic-waste.png" class="d-block img-fluid" width="70" alt="">
                             <p class="fs-4 fw-bold text-green">Organic</p>
                         </div>
     
                         <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../assets/images/recycle/paper-waste.png" class="d-block img-fluid" width="70" alt="">
+                            <img src="../../../assets/images/recycle/paper-waste.png" class="d-block img-fluid" width="70" alt="">
                             <p class="fs-4 fw-bold text-green">Paper</p>
                         </div>
     
                         <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../assets/images/recycle/metal-waste.png" class="d-block img-fluid" width="70" alt="">
+                            <img src="../../../assets/images/recycle/metal-waste.png" class="d-block img-fluid" width="70" alt="">
                             <p class="fs-4 fw-bold text-green">Metal</p>
                         </div>
                     </div>
 
                     <div class="d-flex align-items-center justify-content-center">
                         <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../assets/images/recycle/plastic-waste.png" class="d-block img-fluid" width="70" alt="">
+                            <img src="../../../assets/images/recycle/plastic-waste.png" class="d-block img-fluid" width="70" alt="">
                             <p class="fs-4 fw-bold text-green">Plastic</p>
                         </div>
     
                         <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../assets/images/recycle/glass-waste.png" class="d-block img-fluid" width="70" alt="">
+                            <img src="../../../assets/images/recycle/glass-waste.png" class="d-block img-fluid" width="70" alt="">
                             <p class="fs-4 fw-bold text-green">Glass</p>
                         </div>
     
                         <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../assets/images/recycle/e-waste.png" class="d-block img-fluid" width="70" alt="">
+                            <img src="../../../assets/images/recycle/e-waste.png" class="d-block img-fluid" width="70" alt="">
                             <p class="fs-4 fw-bold text-green">Electronics</p>
                         </div>
                     </div>
@@ -177,7 +148,7 @@
                 <div class="d-flex mt-4 pt-1">
                     <button type="submit" class="btn btn-lg px-4 py-2 mx-auto btn-danger shadow-none">Proceed to Pick up</button>
                 </div>
-            </div> -->
+            </div>
 
 
 
@@ -185,6 +156,6 @@
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="../../script/scheduelePickup.js"></script>
+    <script src="../../../script/scheduelePickup.js"></script>
 </body>
 </html>
