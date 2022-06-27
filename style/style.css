@@ -68,7 +68,7 @@
 }
 .testimonial-card .card-up { 
     height: 120px; 
-    overflow: hidden; 
+    overflow: hidden;
     border-top-left-radius: 0.25rem; 
     border-top-right-radius: 0.25rem; 
 } 
