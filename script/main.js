@@ -28,7 +28,7 @@ function fun(e){
 function validateForm(){
     let Uregex = /^[A-Za-z]+$/
     let Eregex = /^([a-z0-9!#$%&'*+\-/=?^_`{|}~]+(?:\.[a-zA-Z0-9!#$%&'*+\-/=?^_`{|}~]+)*)@((?:[a-z0-9]+(?:[a-z-0-9-]*)\.)+[a-z]{2,})$/gi;
-    let Pregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/
+    let Pregex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}$/
 
 // First name error message
     if(fname.value == ''){
@@ -94,7 +94,7 @@ if(password.value == ''){
     password.style.border = 'red' + ' ' + '1px' + ' ' + 'solid'
     let span = document.createElement('span')
     span.classList.add("cSpan")
-    span.innerHTML = "Password must have at least one Uppercase, lowercase, digit, special characters & 8 characters"
+    span.innerHTML = "Password must have at least one Uppercase, lowercase, digit & 8 characters"
     password.parentElement.append(span)
 }
 
