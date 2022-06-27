@@ -12,6 +12,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="../../../style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../style/scheduelePickup.css">
+    <link rel="stylesheet" href="../../../style/selectCategory.css">
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -94,61 +95,83 @@
 
 
             <!-- select recyclable category -->
-            <div class="row pb-4 g-3 pt-1">
-                <h2 class="ps-5">Select category: </h2>
-                <div class="d-flex flex-column gap-5">    
-
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../../assets/images/recycle/organic-waste.png" class="d-block img-fluid" width="70" alt="">
-                            <p class="fs-4 fw-bold text-green">Organic</p>
+            <form action="" id="catogoryForm">
+                <div class="row pb-4 g-3 pt-1">
+                    <h2 class="ps-5">Select category: </h2>
+                    <div class="d-flex flex-column gap-5">    
+    
+                        <div class="d-flex align-items-center justify-content-center">
+    
+                            <input type="checkbox" id="organicCategory" />
+                            <label for="organicCategory">
+                                <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
+                                    <img src="../../../assets/images/recycle/organic-waste.png" class="d-block img-fluid" width="70" alt="">
+                                    <p class="fs-4 fw-bold text-green">Organic</p>
+                                </div>
+                            </label>
+    
+                            <input type="checkbox" id="paperCategory">
+                            <label for="paperCategory">
+                            <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
+                                <img src="../../../assets/images/recycle/paper-waste.png" class="d-block img-fluid" width="70" alt="">
+                                <p class="fs-4 fw-bold text-green">Paper</p>
+                            </div>
+                            </label>
+    
+                            <input type="checkbox" id="metalCategory">
+                            <label for="metalCategory">
+                            <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
+                                <img src="../../../assets/images/recycle/metal-waste.png" class="d-block img-fluid" width="70" alt="">
+                                <p class="fs-4 fw-bold text-green">Metal</p>
+                            </div>
+                            </label>
                         </div>
     
-                        <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../../assets/images/recycle/paper-waste.png" class="d-block img-fluid" width="70" alt="">
-                            <p class="fs-4 fw-bold text-green">Paper</p>
+                        <div class="d-flex align-items-center justify-content-center">
+                            <input type="checkbox" name="" id="plasticCategory">
+                            <label for="plasticCategory">
+                            <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
+                                <img src="../../../assets/images/recycle/plastic-waste.png" class="d-block img-fluid" width="70" alt="">
+                                <p class="fs-4 fw-bold text-green">Plastic</p>
+                            </div>
+                            </label>
+    
+                            <input type="checkbox" name="" id="glassCategory">
+                            <label for="glassCategory">
+                            <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
+                                <img src="../../../assets/images/recycle/glass-waste.png" class="d-block img-fluid" width="70" alt="">
+                                <p class="fs-4 fw-bold text-green">Glass</p>
+                            </div>
+                            </label>
+    
+                            <input type="checkbox" name="" id="electronicsCategory">
+                            <label for="electronicsCategory">
+                            <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
+                                <img src="../../../assets/images/recycle/e-waste.png" class="d-block img-fluid" width="70" alt="">
+                                <p class="fs-4 fw-bold text-green">Electronics</p>
+                            </div>
+                            </label>
                         </div>
     
-                        <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../../assets/images/recycle/metal-waste.png" class="d-block img-fluid" width="70" alt="">
-                            <p class="fs-4 fw-bold text-green">Metal</p>
-                        </div>
                     </div>
-
-                    <div class="d-flex align-items-center justify-content-center">
-                        <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../../assets/images/recycle/plastic-waste.png" class="d-block img-fluid" width="70" alt="">
-                            <p class="fs-4 fw-bold text-green">Plastic</p>
-                        </div>
     
-                        <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../../assets/images/recycle/glass-waste.png" class="d-block img-fluid" width="70" alt="">
-                            <p class="fs-4 fw-bold text-green">Glass</p>
-                        </div>
-    
-                        <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
-                            <img src="../../../assets/images/recycle/e-waste.png" class="d-block img-fluid" width="70" alt="">
-                            <p class="fs-4 fw-bold text-green">Electronics</p>
-                        </div>
+                    <div class="d-flex mt-3 pt-3 align-items-center justify-content-center">
+                        <select class="form-select w-75 border border-2 border-success shadow-none" aria-label="Default select example">
+                            <option selected disabled>Approx. weight (in kg)</option>
+                            <option value="1">Less than 30kg</option>
+                            <option value="2">30kg - 60kg</option>
+                            <option value="3">61kg - 80kg</option>
+                            <option value="4">81kg - 100kg</option>
+                            <option value="5">More than 100kg</option>
+                          </select>
                     </div>
-
+    
+                    <div class="d-flex mt-4 pt-1">
+                        <button type="submit" class="btn btn-lg px-4 py-2 mx-auto btn-danger shadow-none">Proceed to Pick up</button>
+                    </div>
                 </div>
+            </form>
 
-                <div class="d-flex mt-3 pt-3 align-items-center justify-content-center">
-                    <select class="form-select w-75 border border-2 border-success shadow-none" aria-label="Default select example">
-                        <option selected disabled>Approx. weight (in kg)</option>
-                        <option value="1">Less than 30kg</option>
-                        <option value="2">30kg - 60kg</option>
-                        <option value="3">61kg - 80kg</option>
-                        <option value="4">81kg - 100kg</option>
-                        <option value="5">More than 100kg</option>
-                      </select>
-                </div>
-
-                <div class="d-flex mt-4 pt-1">
-                    <button type="submit" class="btn btn-lg px-4 py-2 mx-auto btn-danger shadow-none">Proceed to Pick up</button>
-                </div>
-            </div>
 
 
 
@@ -157,5 +180,6 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <script src="../../../script/scheduelePickup.js"></script>
+    <script src="../../../script/selectCategory.js"></script>
 </body>
 </html>
