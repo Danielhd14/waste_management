@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="shortcut icon" href="../../../assets/images/recycle-bin.png" type="image/x-icon">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../../../style/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../style/scheduelePickup.css">
+
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../../style/calender.css">
+
+</head>
+<body>
+
+    <div class="row w-100">
+
+        <!-- Side Nav Bar -->
+        <div class="d-none d-lg-flex col-3 flex-column flex-shrink-0 p-3 bg-light position-sticky sidebar collapse fixed-top" style="height: 100vh;">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+              <span class="text-green ms-5 fs-4 fw-bold">nameless</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="nav-item">
+                <a href="../customerDash.html" class="nav-link link-dark" aria-current="page">
+                    <i class='bx bx-home mx-3'></i>
+                    Home
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link active-page">
+                    <i class='bx bxs-truck mx-3'></i>
+                    Pick up
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                    <i class='bx bxs-book mx-3'></i>
+                    Learn
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                    <i class='bx bxs-heart mx-3'></i>
+                    Donation
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                    <i class='bx bx-wallet mx-3'></i>
+                    My Wallet
+                </a>
+              </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+              <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
+                <strong>Profile</strong>
+              </a>
+              <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- End of Side Nav Bar -->
+
+          <!-- Main content -->
+        <div id="main-content" class="col-9 ps-4 d-flex bg-white flex-column pt-3">
+            <div>
+                <h2 class="text-black text-center">Scheduele Pick up</h2>
+                <hr>
+            </div>
+            <div class="col-auto mb-5">
+                <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+                <div class="input-group">
+                  <div class="input-group-text"><i class='bx bx-map fs-2' style='color:#00b300' ></i></div>
+                  <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Add Location">
+                  <div class="input-group-text"><button class="btn shadow-none btn-outline-success">Search</button></div>
+                </div>
+            </div>
+            <div>
+                <h1 class="bg-danger text-white text-center">STILL A WORK IN PROGRESS</h1>
+                <h5>Select Date for pick up: </h5>
+                <div class="wrapper">
+                    <div class="container-calendar">
+                        <h3 id="monthAndYear"></h3>
+                        <div class="button-container-calendar">
+                            <button id="previous" onclick="previous()">&#8249;</button>
+                            <button id="next" onclick="next()">&#8250;</button>
+                        </div>
+                        <table class="table-calendar" id="calendar" data-lang="en">
+                            <thead id="thead-month"></thead>
+                            <tbody id="calendar-body"></tbody>
+                        </table>
+                        <div class="footer-container-calendar">
+                <label for="month">Jump To: </label>
+                      <select id="month" onchange="jump()">
+                                 <option value=0>Jan</option>
+                                 <option value=1>Feb</option>
+                                 <option value=2>Mar</option>
+                                 <option value=3>Apr</option>
+                                 <option value=4>May</option>
+                                 <option value=5>Jun</option>
+                                 <option value=6>Jul</option>
+                                 <option value=7>Aug</option>
+                                 <option value=8>Sep</option>
+                                 <option value=9>Oct</option>
+                                 <option value=10>Nov</option>
+                                 <option value=11>Dec</option>
+                        </select>
+                             <select id="year" onchange="jump()"></select> 
+                             <input class="float-end" type="time" name="time" id="pickupTime">     
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex mt-4 pt-1">
+                <button type="submit" class="btn btn-lg px-4 mb-4 py-2 mx-auto btn-danger shadow-none">Proceed to Pick up</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../../../script/scheduelePickup.js"></script>
+    <script src="../../../script/calender.js"></script>
+</body>
+</html>
