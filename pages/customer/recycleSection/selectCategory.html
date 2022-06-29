@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,6 +17,7 @@
 
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
 
     <div class="row w-100">
@@ -23,73 +25,70 @@
         <!-- Side Nav Bar -->
         <div class="d-none d-lg-flex col-3 flex-column flex-shrink-0 p-3 bg-light position-sticky sidebar collapse fixed-top" style="height: 100vh;">
             <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-              <span class="text-green ms-5 fs-4 fw-bold">nameless</span>
+                <span class="text-green ms-5 fs-4 fw-bold">nameless</span>
             </a>
             <hr>
             <ul class="nav nav-pills flex-column mb-auto">
-              <li class="nav-item">
-                <a href="../customerDash.html" class="nav-link link-dark" aria-current="page">
-                    <i class='bx bx-home mx-3'></i>
-                    Home
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link active-page">
-                    <i class='bx bxs-truck mx-3'></i>
-                    Pick up
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                    <i class='bx bxs-book mx-3'></i>
-                    Learn
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                    <i class='bx bxs-heart mx-3'></i>
-                    Donation
-                </a>
-              </li>
-              <li>
-                <a href="#" class="nav-link link-dark">
-                    <i class='bx bx-wallet mx-3'></i>
-                    My Wallet
-                </a>
-              </li>
+                <li class="nav-item">
+                    <a href="../customerDash.html" class="nav-link link-dark" aria-current="page">
+                        <i class='bx bx-home mx-3'></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link active-page">
+                        <i class='bx bxs-truck mx-3'></i> Pick up
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-dark">
+                        <i class='bx bxs-book mx-3'></i> Learn
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-dark">
+                        <i class='bx bxs-heart mx-3'></i> Donation
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-dark">
+                        <i class='bx bx-wallet mx-3'></i> My Wallet
+                    </a>
+                </li>
             </ul>
             <hr>
             <div class="dropdown">
-              <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-                <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
-                <strong>Profile</strong>
-              </a>
-              <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
-              </ul>
+                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <!-- <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2"> -->
+                    <strong>Profile</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
             </div>
-          </div>
-          <!-- End of Side Nav Bar -->
+        </div>
+        <!-- End of Side Nav Bar -->
 
-          <!-- Main content -->
+        <!-- Main content -->
         <div id="main-content" class="col-9 ps-4 d-flex bg-white flex-column pt-3">
             <div>
-                <h2 class="text-black text-center">Scheduele Pick up</h2>
+                <h2 class="text-black text-center">Schedule Pick up</h2>
                 <hr>
             </div>
             <div id="progress">
-                <div id="progress-bar">     
+                <div id="progress-bar">
                 </div>
-                    <!-- <ul id="progress-num">
+                <!-- <ul id="progress-num">
                         <li class="step active">1</li>
                         <li class="step">2</li>
                         <li class="step">3</li>
                         <li class="step">4</li>
                     </ul> -->
-                    <!-- <button id="progress-prev" class="btn" disabled>Prev</button>
+                <!-- <button id="progress-prev" class="btn" disabled>Prev</button>
                     <button id="progress-next" class="btn">Next</button>  -->
             </div>
 
@@ -98,10 +97,10 @@
             <form action="" id="catogoryForm">
                 <div class="row pb-4 g-3 pt-1">
                     <h2 class="ps-5">Select category: </h2>
-                    <div class="d-flex flex-column gap-5">    
-    
+                    <div class="d-flex flex-column gap-5">
+
                         <div class="d-flex align-items-center justify-content-center">
-    
+
                             <input type="checkbox" id="organicCategory" />
                             <label for="organicCategory">
                                 <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
@@ -109,7 +108,7 @@
                                     <p class="fs-4 fw-bold text-green">Organic</p>
                                 </div>
                             </label>
-    
+
                             <input type="checkbox" id="paperCategory">
                             <label for="paperCategory">
                             <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
@@ -117,7 +116,7 @@
                                 <p class="fs-4 fw-bold text-green">Paper</p>
                             </div>
                             </label>
-    
+
                             <input type="checkbox" id="metalCategory">
                             <label for="metalCategory">
                             <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
@@ -126,7 +125,7 @@
                             </div>
                             </label>
                         </div>
-    
+
                         <div class="d-flex align-items-center justify-content-center">
                             <input type="checkbox" name="" id="plasticCategory">
                             <label for="plasticCategory">
@@ -135,7 +134,7 @@
                                 <p class="fs-4 fw-bold text-green">Plastic</p>
                             </div>
                             </label>
-    
+
                             <input type="checkbox" name="" id="glassCategory">
                             <label for="glassCategory">
                             <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
@@ -143,7 +142,7 @@
                                 <p class="fs-4 fw-bold text-green">Glass</p>
                             </div>
                             </label>
-    
+
                             <input type="checkbox" name="" id="electronicsCategory">
                             <label for="electronicsCategory">
                             <div class="border-green d-md-none d-lg-flex align-items-center justify-content-center flex-column gap-4 col-sm-4 ms-4 me-4 pe-auto mb-4 mb-md-0 mb-sm-0 btn shadow-none py-3 frame">
@@ -152,20 +151,13 @@
                             </div>
                             </label>
                         </div>
-    
+
                     </div>
-    
+
                     <div class="d-flex mt-3 pt-3 align-items-center justify-content-center">
-                        <select class="form-select w-75 border border-2 border-success shadow-none" aria-label="Default select example">
-                            <option selected disabled>Approx. weight (in kg)</option>
-                            <option value="1">Less than 30kg</option>
-                            <option value="2">30kg - 60kg</option>
-                            <option value="3">61kg - 80kg</option>
-                            <option value="4">81kg - 100kg</option>
-                            <option value="5">More than 100kg</option>
-                          </select>
+
                     </div>
-    
+
                     <div class="d-flex mt-4 pt-1">
                         <button type="submit" class="btn btn-lg px-4 py-2 mx-auto btn-danger shadow-none">Proceed to Pick up</button>
                     </div>
@@ -182,4 +174,5 @@
     <script src="../../../script/scheduelePickup.js"></script>
     <script src="../../../script/selectCategory.js"></script>
 </body>
+
 </html>
