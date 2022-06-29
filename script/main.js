@@ -7,6 +7,7 @@ let lname = document.getElementById("lname")
 let email = document.getElementById("email")
 let password = document.getElementById("password")
 let confirmPassword = document.getElementById("confirmPassword")
+
 async function LocalGovernment(){
     const response = await fetch(url)
     const data = await response.json()

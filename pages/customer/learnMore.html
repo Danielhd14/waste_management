@@ -1,12 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn More</title>
+    <title>Document</title>
+
+    <!-- FavIcon -->
+    <link rel="shortcut icon" href="../../assets/images/recycle-bin.png" type="image/x-icon">
+
+    <!-- StyleSheet -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="../../style/style.css" rel="stylesheet">
+    <link href="../../style/customerDash.css" rel="stylesheet">
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-    
+    <div class="row w-100">
+
+        <!-- Side Nav Bar (Large Screen) -->
+        <div class="d-lg-flex d-none col-3 flex-column border-end flex-shrink-0 p-3 bg-light position-sticky sidebar collapse fixed-top" style="height: 100vh;">
+            <a href="#" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <span class="text-green ms-5 fs-4 fw-bold">nameless</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item">
+                    <a href="#" class="nav-link link-dark" aria-current="page">
+                        <i class='bx bx-home mx-3'></i> Home
+                    </a>
+                </li>
+                <li>
+                    <a href="./scheduelePickup.html" class="nav-link link-dark">
+                        <i class='bx bxs-truck mx-3'></i> Pick up
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link active-page">
+                        <i class='bx bxs-book mx-3'></i> Learn
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-dark">
+                        <i class='bx bxs-heart mx-3'></i> Donation
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="nav-link link-dark">
+                        <i class='bx bx-wallet mx-3'></i> My Wallet
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>Profile</strong>
+                </a>
+                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- End of Side Nav Bar -->
+
+        <!-- Main Content-->
+        <div class="col-12 col-lg-9 ps-4 d-flex bg-white flex-column gap-4 pt-4">
+            <!-- <h3>Learn More</h3> -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Qyu-fZ8BOnI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-100 edge border border-4 border-success mt-5 shadow" allowfullscreen></iframe>
+
+            <div class="bg-warning text-center text-white py-5 fs-3 edge" id="qoutes">
+
+            </div>
+            
+            <div class="row">
+                <h3>Blogs</h3>
+                <div class="col-md-6">
+                  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow">
+                    <div class="col p-4 d-flex flex-column position-static">
+                      <h3 class="mb-2 fs-4"><strong class="d-inline-block mb-2 text-warning">Waste Disposal</strong></h3>
+                      <p class="card-text mb-auto">Let's take a look at the types and methods of waste disposal.</p>
+                      <a href="#" class="stretched-link text-success">Continue reading</a>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                      <img src="../../assets/images/refhad-SyH6CiIjzs8-unsplash.jpg" class="d-block img-fluid" alt="">
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="col-md-6">
+                  <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow">
+                    <div class="col p-4 d-flex flex-column position-static">
+
+                      <h3 class="mb-2 fs-4"><strong class="d-inline-block mb-2 text-success">Recycle</strong></h3>
+                      <p class="mb-auto">Recycling can benefit your community and the environment. Some of the benefits of recycling...</p>
+                      <a href="https://www.epa.gov/recycle/recycling-basics#:~:text=Recycling%20is%20the%20process%20of,Benefits%20of%20Recycling" class="stretched-link text-success">Continue reading</a>
+                    </div>
+                    <div class="col d-none d-lg-block">
+                        <img src="../../assets/images/elly-filho-prFmxl4FPP4-unsplash.jpg" class="d-block img-fluid" alt="">
+                      </div>
+                  </div>
+                </div>
+            </div>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7fVUyVuyP6I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" class="w-100 edge border border-4 border-warning mb-5 mt-5 shadow" allowfullscreen></iframe>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="../../script/learnMore.js"></script>
 </body>
+
 </html>
