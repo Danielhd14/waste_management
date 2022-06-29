@@ -1,14 +1,20 @@
 input[type="checkbox"] {
     display: none;
-  }
-  
-  label {
+}
+
+input[type="date"],
+input[type="time"] {
+    border: 1px solid #00b300;
+    font-size: 18px;
+}
+
+label {
     display: block;
     position: relative;
     cursor: pointer;
-  }
-  
-  label:before {
+}
+
+label:before {
     background-color: white;
     color: white;
     content: " ";
@@ -24,6 +30,7 @@ input[type="checkbox"] {
     height: 40px;
     transition-duration: 0.4s;
     transform: scale(0);
+<<<<<<< HEAD
   }
   :checked + label {
     border-color: #ddd;
@@ -34,3 +41,31 @@ input[type="checkbox"] {
     transform: scale(1);
   }
   
+=======
+}
+
+
+/* label img {
+    height: 100px;
+    width: 100px;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  } */
+
+ :checked+label {
+    border-color: #ddd;
+}
+
+ :checked+label:before {
+    content: "✓";
+    background-color: #00b300;
+    transform: scale(1);
+}
+
+
+/* :checked + label img {
+    transform: scale(0.9);
+    box-shadow: 0 0 5px #333;
+    z-index: -1;
+  } */
+>>>>>>> 013dfb1428df22bd181411092b40f3df1be1ba8f
