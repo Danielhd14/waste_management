@@ -7,7 +7,7 @@ async function loadUsers() {
     console.log(data);
 
     qoutes.innerHTML = `<div>
-        <p>${data[3].quotes}</p>
+        <p>${data[0].quotes}</p>
     </div>`
 }
 loadUsers();
