@@ -4,10 +4,18 @@ let qoutes = document.getElementById("qoutes")
 async function loadUsers() {
     const response = await fetch(url);
     const data = await response.json();
-    console.log(data);
 
+    let random = Math.floor(Math.random() * data.length)
     qoutes.innerHTML = `<div>
-        <p>${data[0].quotes}</p>
+        <p>${data[random].quotes}</p>
     </div>`
+
+    let Quoting = setInterval(()=>{
+        let random = Math.floor(Math.random() * data.length)
+        qoutes.innerHTML = `<div>
+            <p>${data[random].quotes}</p>
+        </div>`
+    },5000)
+
 }
 loadUsers();
